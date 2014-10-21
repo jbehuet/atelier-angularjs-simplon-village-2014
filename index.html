@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>AngularJS • Jérôme BEHUET @ Simplon Village 2014</title>
+
+		<meta name="description" content="Un atelier à Simplon Village 2014">
+		<meta name="author" content="Jerome BEHUET">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/theme/blood.css" id="theme-basis">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body id="prioFix">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="img/AngularLogo.png" style="border:none;background:none;box-shadow:none" />
+					<p>
+						Un atelier de <a href="http://jbehuet.fr/">Jérôme BEHUET</a> à <a href="http://http://simplon-village.com/">Simplon Village 2014</a>
+					</p>
+				</section>
+
+				<section id="whoami">
+					<h2>Qui suis-je ?</h2>
+
+					
+				</section>
+
+				<section>
+					<section id="install">
+						<h1>Install!</h1>
+            <h3>A vos claviers...</h3>
+					</section>
+
+          <section id="install-workshop">
+            <h2>L’atelier</h2>
+
+            <p>Par Git :</p>
+            <pre><code class="bash">$ git clone https://github.com/xxx/atelierXXX.git</code></pre>
+
+            <p>Ou en <a href="https://github.com/...../releases">téléchargeant l’archive</a></p>
+          </section>
+
+          <section id="install-bower">
+            <h2>Bower</h2>
+            <pre><code data-trim class="sh">
+                $ npm install -g bower
+            </code></pre>
+          </section>
+
+          <section id="install-angular">
+            <h2>AngularJS</h2>
+            <p>Via bower</p>
+            <pre><code data-trim class="sh">
+              $ bower install angular#1.2.26
+            </code></pre>
+            <p>CDN</p>
+            <pre><code data-trim class="sh">
+              https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js
+            </code></pre>
+          </section> 
+        </section><!-- #installs -->
+
+        <section id="more" data-state="theme-color-mint-beige">
+          <h2>Quelques liens</h2>
+          <br />
+          <p><a href="https://angularjs.org/">Documentation AngularJS</a></p>
+          <p><a href="https://egghead.io/">Egghead.io</a></p>
+          <p><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">CodeSchool</a></p>
+          <br />
+        </section>
+
+				<section>
+					<h1>Merci !</h1>
+          <br>
+					<p>Jérôme BEHUET <a href="https://twitter.com/jbehuet">@jbehuet</a></p>
+
+          <p class="breathing">
+            Retrouvez les slides sur <a href="">xxxx</a><br/></p>
+          <p>mais aussi <a href="https://github.com/" target="_blank">le dépôt complet sur GitHub</a>.</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+        width: 980,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
