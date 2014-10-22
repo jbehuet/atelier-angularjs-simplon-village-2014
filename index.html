@@ -50,64 +50,78 @@
 					</p>
 				</section>
 
-				<section id="whoami">
+				<section id="whoiam">
 					<h2>Qui suis-je ?</h2>
-
-					
+					<div>
+						<img src="http://www.jbehuet.fr/wp-content/themes/jbehuet/images/profil.jpg">
+						<ul>
+							<li>Jérôme BEHUET</li>
+							<li>28 ans</li>
+							<li>Développeur FullStack</li>
+							<li>Depuis ~7ans</li>
+							<li>100% Autodidacte !</li>
+						</ul>
+					</div>
 				</section>
 
 				<section>
 					<section id="install">
 						<h1>Install!</h1>
-            <h3>A vos claviers...</h3>
+						<h3>A vos claviers...</h3>
 					</section>
 
-          <section id="install-workshop">
-            <h2>L’atelier</h2>
+		         	<section id="install-workshop">
+		            	<h2>L’atelier</h2>
 
-            <p>Par Git :</p>
-            <pre><code class="bash">$ git clone https://github.com/xxx/atelierXXX.git</code></pre>
+		            	<p>Par Git :</p>
+		            	<pre><code class="bash">$ git clone https://github.com/jbehuet/atelier-angularjs-simplon-village-2014.git</code></pre>
 
-            <p>Ou en <a href="https://github.com/...../releases">téléchargeant l’archive</a></p>
-          </section>
+		            	<p>Ou en <a href="https://github.com/...../releases">téléchargeant l’archive</a></p>
+		          	</section>
 
-          <section id="install-bower">
-            <h2>Bower</h2>
-            <pre><code data-trim class="sh">
-                $ npm install -g bower
-            </code></pre>
-          </section>
+		          	<section id="install-bower">
+		            	<h2>Bower</h2>
+		            	<p>Gestionnaire de paquet</p>
+		            	<pre><code data-trim class="sh">
+		                	$ npm install -g bower
+		            	</code></pre>
+		          	</section>
 
-          <section id="install-angular">
-            <h2>AngularJS</h2>
-            <p>Via bower</p>
-            <pre><code data-trim class="sh">
-              $ bower install angular#1.2.26
-            </code></pre>
-            <p>CDN</p>
-            <pre><code data-trim class="sh">
-              https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js
-            </code></pre>
-          </section> 
-        </section><!-- #installs -->
+		          	<section id="install-angular">
+		            	<h2>AngularJS</h2>
+		            	<p>Via bower</p>
+		            	<small>Création du fichier .bowerrc</small>
+		            	<pre><code data-trim class="json">
+		            		{ "directory" : "js/libs" }
+		            	</code></pre>
+		            	<pre><code data-trim class="sh">
+		              		$ bower install angular#1.2.26
+		            	</code></pre>
+		            	<p>Ou via le CDN</p>
+		            	<pre><code data-trim class="sh">
+		              		https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js
+		            	</code></pre>
+		          	</section> 
+        		</section><!-- #installs -->
 
-        <section id="more" data-state="theme-color-mint-beige">
-          <h2>Quelques liens</h2>
-          <br />
-          <p><a href="https://angularjs.org/">Documentation AngularJS</a></p>
-          <p><a href="https://egghead.io/">Egghead.io</a></p>
-          <p><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">CodeSchool</a></p>
-          <br />
-        </section>
+		        <section id="more" data-state="theme-color-mint-beige">
+		          <h2>Quelques liens</h2>
+		          <br />
+		          <p><a href="https://angularjs.org/">Documentation AngularJS</a></p>
+		          <p><a href="http://todomvc.com/">TodoMVC</a></p>
+		          <p><a href="https://egghead.io/">Egghead.io</a></p>
+		          <p><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/">CodeSchool</a></p>
+		          <br />
+		        </section>
 
 				<section>
 					<h1>Merci !</h1>
-          <br>
+	          		<br>
 					<p>Jérôme BEHUET <a href="https://twitter.com/jbehuet">@jbehuet</a></p>
 
-          <p class="breathing">
-            Retrouvez les slides sur <a href="">xxxx</a><br/></p>
-          <p>mais aussi <a href="https://github.com/" target="_blank">le dépôt complet sur GitHub</a>.</p>
+	          		<p class="breathing">
+	            	Retrouvez les slides sur <a href="http://bit.ly/angularsimplon2014">bit.ly/angularsimplon2014</a><br/></p>
+	          		<p>mais aussi <a href="https://github.com/jbehuet/atelier-angularjs-simplon-village-2014" target="_blank">le dépôt complet sur GitHub</a>.</p>
 				</section>
 			</div>
 		</div>
@@ -124,8 +138,7 @@
 				progress: true,
 				history: true,
 				center: true,
-
-        width: 980,
+        		width: 980,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
