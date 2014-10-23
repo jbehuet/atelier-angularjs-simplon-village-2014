@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/theme/blood.css" id="theme-basis">
+    	<link rel="stylesheet" href="css/theme/blood.css" id="theme-basis">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/tomorrow.css">
@@ -35,6 +35,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style>
+		.highlighting{ 
+			color: #aa2233;
+			text-shadow: 2px 2px 2px #000;
+		}
+		</style>
 	</head>
 
 	<body id="prioFix">
@@ -59,14 +65,36 @@
 							<li>28 ans</li>
 							<li>Développeur FullStack</li>
 							<li>Depuis ~7ans</li>
-							<li>100% Autodidacte !</li>
+							<li><span class="highlighting">100% Autodidacte !</span></li>
 						</ul>
 					</div>
 				</section>
 
+				<section id="angular-presentation">
+					<h2>AngularJS</h2>
+					<h4>En quelques mots</h4>
+					<ul>
+						<li>Créé en 2009 par Google</li>
+						<li>Framework SPA (Single Page Application)</li>
+						<li>Pattern MVC</li>
+						<li>Projet Libre et OpenSource (sous licence MIT)</li>
+						<li>Autres Frameworks (Backbone, EmberJS, etc.)</li>
+					</ul>
+				</section>
+
+				<section id="pattern-mvc">
+					<h2>MVC, Kesako ?</h2>
+					<ul>
+						<li><span style="font-weight:bold"><span class="highlighting">M</span>odèle</span> : Contient les données</li>
+						<li><span style="font-weight:bold"><span class="highlighting">V</span>ue</span> : Capture les évènements et les transmets au controlleur</li>
+						<li><span style="font-weight:bold"><span class="highlighting">C</span>ontrolleur</span> : Modifie les données suivant les évènements</li>
+					</ul>
+					<img src="img/ModeleMVC.png">
+				</section>
+
 				<section>
 					<section id="install">
-						<h1>Install!</h1>
+						<h1>Install !</h1>
 						<h3>A vos claviers...</h3>
 					</section>
 
@@ -103,7 +131,7 @@
 		            	</code></pre>
 		          	</section> 
         		</section><!-- #installs -->
-
+				
 		        <section id="more" data-state="theme-color-mint-beige">
 		          <h2>Quelques liens</h2>
 		          <br />
