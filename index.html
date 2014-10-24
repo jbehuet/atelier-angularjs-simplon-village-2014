@@ -59,14 +59,16 @@
 				<section id="whoiam">
 					<h2>Qui suis-je ?</h2>
 					<div>
-						<img src="http://www.jbehuet.fr/wp-content/themes/jbehuet/images/profil.jpg">
-						<ul>
-							<li>Jérôme BEHUET</li>
-							<li>28 ans</li>
-							<li>Développeur FullStack</li>
-							<li>Depuis ~7ans</li>
-							<li><span class="highlighting">100% Autodidacte !</span></li>
-						</ul>
+					<pre><code data-trim class="javascript">
+var jerome = {
+	age:     28,
+	city:    "Senonches",
+	company: "Proj'ystem",
+	label:   "Développeur FullStack",
+	skills:  ['Javascript', 'Node.JS', 'Java', 'C#', 'Python', 'Perl'],
+	special: "Autodidacte"
+};
+          </code></pre>
 					</div>
 				</section>
 
@@ -74,11 +76,11 @@
 					<h2>AngularJS</h2>
 					<h4>En quelques mots</h4>
 					<ul>
-						<li>Créé en 2009 par Google</li>
-						<li>Framework SPA (Single Page Application)</li>
-						<li>Pattern MVC</li>
-						<li>Projet Libre et OpenSource (sous licence MIT)</li>
-						<li>Autres Frameworks (Backbone, EmberJS, etc.)</li>
+						<li class="fragment">Créé en 2009 par Google</li>
+						<li class="fragment">Framework SPA (Single Page Application)</li>
+						<li class="fragment">Pattern MVC</li>
+						<li class="fragment">Projet Libre et OpenSource (sous licence MIT)</li>
+						<li class="fragment">Autres Frameworks (Backbone, EmberJS, etc.)</li>
 					</ul>
 				</section>
 
@@ -108,9 +110,9 @@
 		          	</section>
 
 		          	<section id="install-bower">
-		            	<h2>Bower</h2>
+		            	<h2><img src="http://bower.io/img/bower-logo.png" style="width: 100px;margin: -15px 20px;">Bower</h2>
 		            	<p>Gestionnaire de paquet</p>
-		            	<pre><code data-trim class="sh">
+		            	<pre><code data-trim class="bash">
 		                	$ npm install -g bower
 		            	</code></pre>
 		          	</section>
@@ -122,16 +124,29 @@
 		            	<pre><code data-trim class="json">
 		            		{ "directory" : "js/libs" }
 		            	</code></pre>
-		            	<pre><code data-trim class="sh">
-		              		$ bower install angular#1.2.26
+		            	<pre><code data-trim class="bash">
+		            		$ bower init
+$ bower install angular#1.2.26 --save
 		            	</code></pre>
 		            	<p>Ou via le CDN</p>
-		            	<pre><code data-trim class="sh">
+		            	<pre><code data-trim class="bash">
 		              		https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js
 		            	</code></pre>
 		          	</section> 
         		</section><!-- #installs -->
-				
+
+				<section id="atelier">
+					<section id="hello-angular">
+						<h2>Hello Angular</h2>
+						<p>Dynamisons notre contenu statique</p>
+						<pre class="fragment"><code class="xml">
+<label>Votre nom</label>
+<input type='text' class='form-control' ng-model='yourName' placeholder='Entre votre nom'>
+<h2>Hello {{yourName}} !</h2>
+						</code></pre>
+					</section>
+				</section><!-- #atelier -->
+
 		        <section id="more" data-state="theme-color-mint-beige">
 		          <h2>Quelques liens</h2>
 		          <br />
@@ -142,7 +157,7 @@
 		          <br />
 		        </section>
 
-				<section>
+				<section id="end">
 					<h1>Merci !</h1>
 	          		<br>
 					<p>Jérôme BEHUET <a href="https://twitter.com/jbehuet">@jbehuet</a></p>
