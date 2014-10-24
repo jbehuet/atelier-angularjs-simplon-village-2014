@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS • Jérôme BEHUET @ Simplon Village 2014</title>
+		<meta name="description" content="Un atelier à Simplon Village 2014">
+		<meta name="author" content="Jerome BEHUET">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- STYLESHEET -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- ANGULARJS -->
+		<script src="js/libs/angular/angular.min.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<span class="navbar-brand"><a href="/">Atelier AngularJS</a> - Simplon Village 2014</span>
+			</div>
+		</div>
+		<div class="container">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Votre nom</label>
+				<input type="text" class="form-control" ng-model="yourName" placeholder="Entre votre nom">
+			</div>
+			<h2>Hello {{yourName}} !</h2>
+		</div>
+	</body>
+</html>

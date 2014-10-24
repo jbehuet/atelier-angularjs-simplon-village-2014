@@ -1,0 +1,22 @@
+{
+  "name": "atelier",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jbehuet/atelier-angularjs-simplon-village-2014",
+  "authors": [
+    "jbehuet <jbehuet@gmail.com>"
+  ],
+  "description": "Atelier AngularJS - Simplon Village 2014",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.26"
+  }
+}
