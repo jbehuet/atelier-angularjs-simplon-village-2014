@@ -21,10 +21,21 @@
 		</div>
 		<div class="container">
 			<div class="form-group">
-				<label for="exampleInputEmail1">Votre nom</label>
-				<input type="text" class="form-control" ng-model="yourName" placeholder="Entre votre nom">
+				<label for="exampleInputEmail1">Recherche</label>
+				<input type="text" class="form-control" ng-model="search" placeholder="Entre votre texte">
 			</div>
-			<h2>Hello {{yourName}} !</h2>
+			<table class="table table-condensed" ng-init="messages=[{user:'Jérôme', content:'First !'}, {user:'Eric', content:'Salut'} ]">
+				<tr>
+					<th>#</th>
+					<th>Utilisateur</tH>
+					<th>Message</tH>
+				</tr>
+				<tr ng-repeat="message in messages | filter: {content: search}">
+					<td>{{$index}}</td>
+					<td>{{message.user | uppercase }}</td>
+					<td>{{message.content}}</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
