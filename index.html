@@ -12,28 +12,58 @@
 
 		<!-- ANGULARJS -->
 		<script src="js/libs/angular/angular.min.js"></script>
+		<script type="text/javascript">
+			function mainController($scope){
+				$scope.messages = [ {user:'Jérôme', content:'First !'}, {user:'Eric', content:'Salut'} ];
+
+				$scope.add = function(){
+					$scope.messages.push({user: $scope.user, content: $scope.content})
+					$scope.user = "";
+					$scope.content = "";
+				}
+
+				$scope.delete = function(id){
+					$scope.messages.splice(id, 1);
+				}
+			}
+		</script>
 	</head>
-	<body>
+	<body ng-controller="mainController">
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<span class="navbar-brand"><a href="/">Atelier AngularJS</a> - Simplon Village 2014</span>
 			</div>
 		</div>
 		<div class="container">
+			
+			<div>
+				<h3>Nouveau message</h3>
+				<div class="form-group">
+					<label>Votre nom</label>
+					<input type="text" class="form-control" ng-model="user" placeholder="Entre votre nome">
+					<label>Votre message</label>
+					<input type="text" class="form-control" ng-model="content" placeholder="Entre votre message">
+				</div>
+				<div class="form-group">
+					<button type="button" class="btn btn-success form-control" ng-click="add()">Ajouter</button>
+				</div>
+			</div>
+
 			<div class="form-group">
-				<label for="exampleInputEmail1">Recherche</label>
+				<label>Recherche</label>
 				<input type="text" class="form-control" ng-model="search" placeholder="Entre votre texte">
 			</div>
-			<table class="table table-condensed" ng-init="messages=[{user:'Jérôme', content:'First !'}, {user:'Eric', content:'Salut'} ]">
+			<table class="table table-condensed">
 				<tr>
 					<th>#</th>
 					<th>Utilisateur</tH>
-					<th>Message</tH>
+					<th colspan="2">Message</th>
 				</tr>
 				<tr ng-repeat="message in messages | filter: {content: search}">
 					<td>{{$index}}</td>
 					<td>{{message.user | uppercase }}</td>
 					<td>{{message.content}}</td>
+					<td><button type="button" class="btn btn-danger" ng-click="delete($index)" style="width:36px;float:right">x</button></td>
 				</tr>
 			</table>
 		</div>
