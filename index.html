@@ -154,6 +154,29 @@ $ bower install angular#1.2.26 --save
 						<h2>Directives</h2>
 						<p>Les directives permettent de créer des éléments et des attributs HTML spécifiques afin de manipuler proprement le DOM</p>
 					</section>
+					<section id="controllers">
+						<h2>Controllers</h2>
+						<p>Lien entre la vue et les données.</p>
+						<pre class="fragment"><code class="javascript">
+function mainController($scope){
+	$scope.titre = "Le titre";
+}
+						</code></pre>
+						<p class="fragment"><span class="highlighting">$scope</span> représente ce lien.</p>
+					</section>
+					<section id="services">
+						<h2>Services</h2>
+						<ul>
+						<li>Partager les données dans l'application, par le biais d'injection de dépendances.</li>
+						<li>Exemple de services (providers) proposé par AngularJS</li>
+						<li style="list-style: none;"><ul>
+							<li>$http</li>
+							<li>$timout</li>
+							<li>$location</li>
+						</ul></li>
+							<li><span class="highlighting">Singleton</span></li>
+						</ul>
+					</section>
 				</section><!-- #atelier -->
 
 		        <section id="more" data-state="theme-color-mint-beige">
