@@ -5,6 +5,9 @@ function messagesService(){
 		get : function(){
 			return service.messages;
 		},
+		add: function(message){
+			service.messages.push(message);
+		},
 		delete: function(id){
 			service.messages.splice(id, 1);
 		}
